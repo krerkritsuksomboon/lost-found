@@ -1,0 +1,191 @@
+/* General */
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: "Poppins", sans-serif;
+        background-color: #f8f8f8;
+    }
+
+/* Header */
+    header{
+        display: flex; /* flexible layout */
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background-color: white;
+    }
+
+    /* Logo */
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .logo img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .logo-text h2{
+        font-size: 20px;
+        font-weight: 400;
+        color: #12395B;
+    }
+
+    .logo-text h1{
+        font-size: 34px;
+        font-weight: 700;
+        color: #12395B;
+    }
+
+
+    /* Navigation */
+    nav ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        gap: 35px;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: #12395B;
+        font-size: 18px;
+        font-weight: 500;
+    }
+            nav a:hover{
+                color: #D8A94B;
+            }
+
+        /* Contact Button */
+        .contact-btn{
+            background-color: #12395B;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 24px;
+        }
+
+            .contact-btn:hover{
+                background: #D8A94B;
+            }
+
+/* Banner */
+    .banner{
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items:center;
+        padding: 80px;
+        background-color:#ffffff;
+    }
+
+    /* Content */
+    .banner-content h1{
+        font-size:56px;
+        color:#12395B;
+        margin-bottom:10px;
+    }
+
+    .banner-content h2{
+        font-size:36px;
+        color:#D8A94B;
+        margin-bottom:20px;
+    }
+
+    .banner-content p{
+        font-size:20px;
+        color:#12395B;
+        margin-bottom:35px;
+    }
+
+    /* Buttons */
+    .banner-btn a{
+        text-decoration: none;
+        background: #12395B;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 40px;
+        display: flex;
+        width: 250px;
+    }
+
+        .banner-btn a:hover{
+            background: #D8A94B;
+        }
+
+/* Footer */
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #12395B;
+        color: white;
+        padding: 35px 60px;
+    }
+
+    /* Left - Logo */
+        .footer-logo{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .footer-logo img{
+            width: 70px;
+            height: 70px;
+        }
+
+        .footer-logo-text h3{
+            font-size: 28px;
+            margin-bottom: 5px;
+        }
+
+        .footer-logo-text p{
+            font-size: 16px;
+        }
+
+    /* Center - Contact */
+        .footer-contact h3{
+            color: #D8A94B;
+            margin-bottom: 10px;
+        }
+
+    /* Right - Office Hours */
+        .footer-office_hours h3{
+            color: #D8A94B;
+            margin-bottom: 10px;
+        }
+
+
+/* Responsive */
+@media (max-width:768px){
+    header{
+        flex-direction:column;
+        padding:20px 20px 40px 20px;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap:15px;
+    }
+
+    .banner-content h1{
+        font-size: 38px;
+    }
+
+    .banner-content h2{
+        font-size: 26px;
+    }
+
+    footer{
+        flex-direction:column;
+        text-align:center;
+        gap:35px;
+    }
+}

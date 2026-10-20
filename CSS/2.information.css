@@ -1,0 +1,115 @@
+/* Banner */
+.banner.small{
+    background-image: url(../images/Banner-information.png);
+    height: 400px;
+}
+
+/* About Our Service */
+.about-our-service{
+    padding: 80px 60px 0px 10px;
+    background-color: #ffffff;
+    text-align: left;
+    color: #12395B;
+}
+
+.about-our-service h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+    padding: 0px 10%;
+}
+
+.about-our-service p{
+    font-size: 20px;
+    margin-bottom: 100px;
+    padding: 0px 10%;
+}
+
+
+.aboutourservice-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 10%;
+    gap: 30px;
+}
+
+    /* Card - How It Works */
+    .card-aboutourservice{
+        width: 300px;
+        background-color: white;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+        /* Card Image */
+        .card-aboutourservice img{
+            width: 100%;
+            height: 100px;
+        }
+
+        /* Item Info */
+        .info-aboutourservice{
+            padding: 20px;
+            text-align: center;
+        }
+
+        .info-aboutourservice h3{
+            font-size: 24px;
+            color: #12395B;
+            margin-bottom: 10px;
+        }
+
+/* Must Know */
+    /* I copy class(es) from "Statistics CSS" in "index" and edit */
+.statistics{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 80px 60px;
+    background-color: #f8f8f8;
+    color: #12395B;
+}
+
+    /* Must Know Card */
+    .stat-card{
+        width: 450px;
+        padding: 50px;
+        border-radius: 20px;
+    }
+
+    .stat-card.stat-card1{
+        background-color: #e9f0e5;
+    }
+
+    .stat-card.stat-card2{
+        background-color: #f9eded;
+    }
+
+    .stat-card.stat-card3{
+        background-color: #e4e9f6;
+    }
+
+        /* Topic */
+        .stat-card h2{
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        /* Text */
+        .stat-card ul{
+            font-size: 20px;
+            padding: 0px 0px 0px 30px;
+        }
+
+/* Responsive */
+@media (max-width:768px){
+    /* Card Container */
+    .aboutourservice-container{
+        justify-content: center;
+    }
+
+    .about-our-service h2{
+        text-align: center;
+    }
+}
